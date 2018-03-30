@@ -1,0 +1,371 @@
+10:53:43'917.14>  #!!# WARN :  - FSM/SPY - [SMS MO FSM] Unhandled evt=RRC_REL_IND state=IDLE
+10:53:43'917.33>  >>>>  - ETM/MSG - etmTaskHandler id=0x2A000010 EtmRrcStateInd
+10:53:43'917.33>  #!!# WARN :  - ETM/SPY - Stop Traffic Detection
+10:53:43'975.95>  >>>>  - ETM/MSG - etmTaskHandler id=0x2900001A UpdcpRbReleaseInd
+10:53:43'975.98>  >>>>  - ETM/RB_DB - Notify radio bearer release epsRbId=6
+10:53:47'516.17>  >>>>  - NAS/HP/Manager - enter handleSetEpsBearerContextStatusReq
+10:53:47'516.17>  >>>>  - NAS/HP/Manager - +CGACT: status=1 nbCid=1
+10:53:47'516.20>  >>>>  - NAS/HP/Manager - request SetEpsBearerContextStatus in progress
+10:53:47'516.38>  >>>>  - NAS/HP/Manager - cid=3 st=253 bmpEst=0x4 bmpRel=0x0
+10:53:48'127.27>  #!!# WARN :  - MAC/RA - PRACH problem indication
+10:53:49'453.60>  >>>>  - ETM/MSG - etmTaskHandler id=0x2A000010 EtmRrcStateInd
+10:53:49'453.60>  #!!# WARN :  - ETM/SPY - Start Traffic Detection
+10:53:49'517.32>  >>>>  - ETM/MSG - etmTaskHandler id=0x29000019 UpdcpRbSetupInd
+10:53:49'517.35>  >>>>  - ETM/RB_DB - Notify radio bearer setup epsRbId=6 pdcpDrbId=3
+10:53:49'596.39>  >DBG>  - NAS/HP/Manager - SetEpsBearerContextStatus processed
+10:53:49'596.63>  >DBG>  - NAS/HP/Manager - Result for SetEpsBearerContextStatus notified
+10:53:49'599.65>  >>>>  - ETM/MSG - etmTaskHandler id=0x2A000008 EtmBearerEstablishReq
+10:53:49'599.68>  >>>>  - ETM/DFT - notifyBearerEstablished default=yes epsBearerId=5 cid=3 tft=no dns4Nb=1 dns6Nb=1 pCscf4Nb=0 pCscf6Nb=0
+10:53:49'599.75>  >>>>  - ETM/RB - (create-E) PoolPdnFilter sz=7, PoolFilter sz=128, filter qty=0
+10:53:49'599.78>  >>>>  - ETM/RB - (create-L) PoolPdnFilter sz=6, pdnFilter(@=0x0013AD0C), PoolFilter sz=128, filter qty=0
+10:53:49'599.81>  >>>>  - ETM/RB_DB - Create a new RB cid=3 epsBearerId=5 default=5 state=Active
+10:53:49'599.84>  >>>>  - ETM/RB_DB - [rbId:5] apply DL Traffic Prio Low
+10:53:49'599.87>  >>>>  - ETM/MPDN - enter enableItf
+10:53:49'599.99>  >>>>  - ETM/MPDN - selectDefaultPdn - keep Pdn cid=2
+10:53:49'600.02>  #!!# WARN :  - ETM/MPDN - enableItf - id/epsBrId/cid=3/5/3, type=V4V6
+10:53:49'600.05>  #!!# WARN :  - ETM/DFT - PDN IPv4 Address is assigned 192.168.3.11
+10:53:49'600.05>  >>>>  - ETM/SPY - DNS present
+10:53:49'600.08>  >>>>  - ETM/DFT - PDN IPv6 Itf Id is assigned 2A02:0578:5417:3002
+10:53:49'600.51>  >>>>  - ETM/MSG - etmTaskHandler id=0x29000019 UpdcpRbSetupInd
+10:53:49'600.51>  >>>>  - ETM/RB_DB - Notify radio bearer setup epsRbId=5 pdcpDrbId=4
+10:53:49'661.48>  >>>>  - ETM/SPY - catchSpecificDlPacket - IpV6 - payload type=58 hdrL=40 payloadL=48
+10:53:49'661.51>  >>>>  - ETM/DFT - getPacketInfo - Ipv6 prot payload - type:58(ICMPv6), ip hdr Length:40, length:48
+10:53:49'661.54>  >>>>  - ETM/SPY - catchSpecificDlPacket - IP6 ICMP, pkt size:102, epsBrId=5
+10:53:49'661.57>  #!!# WARN :  - ETM/ICMP6 - drop DL: client not configured yet
+10:53:49'661.57>  >>>>  - ETM/SPY - Drop the DL icmpV6 msg
+10:53:49'695.48>  >>>>  - ETM/MSG - etmTaskHandler id=0x2A000003 EtmUlDataInd
+10:53:49'695.51>  >>>>  - ETM/SPY - catchSpecificUlPacket - IP6, pkt size:86, vlanId=0x463
+10:53:49'695.60>  >>>>  - ETM/DFT - getPacketInfo - Ipv6 prot payload - type:58(ICMPv6), ip hdr Length:48, length:24
+10:53:49'695.72>  >>>>  - ETM/DFT - updtClientInfo - cpu=APP client mac@ => 00:16:08:00:04:63
+10:53:49'695.75>  >>>>  - ETM/ICMP6 - use client cpu=APP vlan=0x463 mac@=00:16:08:00:04:63
+10:53:49'695.78>  >>>>  - ETM/ICMP6 - src IP@=
+10:53:49'695.81>  >>>>  - ETM/ICMP6 - dst IP@=FF02::1:FF00:463
+10:53:49'695.87>  >>>>  - ETM/ICMP6 - cpu=APP UL pkt MLD1 REPORT (date=216090)
+10:53:49'696.06>  >>>>  - ETM/ICMP6 - (L=86)
+00 16 08 00 04 63 00 16  08 00 04 63 86 DD 60 00
+00 00 00 20 00 01 00 00  00 00 00 00 00 00 00 00
+00 00 00 00 00 00 FF 02  00 00 00 00 00 00 00 00
+00 01 FF 00 04 63 3A 00  05 02 00 00 01 00 83 00
+77 DD 00 00 00 00 FF 02  00 00 00 00 00 00 00 00
+00 01 FF 00 04 63
+<END>
+10:53:49'696.15>  >>>>  - ETM/ICMP6 - Forwarded msg content =======================
+10:53:49'696.30>  >>>>  - ETM/ICMP6 - (L=86)
+00 16 08 00 04 63 00 16  08 00 04 63 86 DD 60 00
+00 00 00 20 00 01 FE 80  00 00 00 00 00 00 2A 02
+05 78 54 17 30 02 FF 02  00 00 00 00 00 00 00 00
+00 01 FF 00 04 63 3A 00  05 02 00 00 01 00 83 00
+C5 C8 00 00 00 00 FF 02  00 00 00 00 00 00 00 00
+00 01 FF 00 04 63
+<END>
+10:53:49'696.36> CID 3 UL IP packet (length=72)
+		 60 00 00 00 00 20 00 01 fe 80 00 00 00 00 00 00 2a 02 05 78 54 17 30 02 ff 02 00 00 00 00 00 00 00 00 00 01 ff 00 04 63 3a 00 05 02 00 00 01 00 83 00 c5 c8 00 00 00 00 ff 02 00 00 00 00 00 00 00 00 00 01 ff 00 04 63
+10:53:49'697.10>  >>>>  - ETM/MSG - etmTaskHandler id=0x2A000003 EtmUlDataInd
+10:53:49'697.16>  >>>>  - ETM/SPY - catchSpecificUlPacket - IP6, pkt size:86, vlanId=0x463
+10:53:49'697.19>  >>>>  - ETM/DFT - getPacketInfo - Ipv6 prot payload - type:58(ICMPv6), ip hdr Length:40, length:32
+10:53:49'697.28>  >>>>  - ETM/ICMP6 - use client cpu=APP vlan=0x463 mac@=00:16:08:00:04:63
+10:53:49'697.31>  >>>>  - ETM/ICMP6 - src IP@=
+10:53:49'697.31>  >>>>  - ETM/ICMP6 - dst IP@=FF02::1:FF00:463
+10:53:49'697.37>  >>>>  - ETM/ICMP6 - cpu=APP UL pkt NEIGH SOLICIT (date=216090)
+10:53:49'697.58>  >>>>  - ETM/ICMP6 - (L=86)
+00 16 08 00 04 63 00 16  08 00 04 63 86 DD 60 00
+00 00 00 20 3A FF 00 00  00 00 00 00 00 00 00 00
+00 00 00 00 00 00 FF 02  00 00 00 00 00 00 00 00
+00 01 FF 00 04 63 87 00  5D C9 00 00 00 00 FE 80
+00 00 00 00 00 00 00 00  00 16 08 00 04 63 01 01
+00 16 08 00 04 63
+<END>
+10:53:49'697.61>  >>>>  - ETM/ICMP6 - target:FE80::16:800:463
+10:53:49'697.61>  >>>>  - ETM/ICMP6 - Duplicate Addr Detection
+10:53:49'697.64>  >>>>  - ETM/SPY - Drop the UL icmpV6 msg
+10:53:49'697.92>  >>>>  - ETM/MSG - etmTaskHandler id=0x2A000003 EtmUlDataInd
+10:53:49'697.95>  >>>>  - ETM/SPY - catchSpecificUlPacket - IP6, pkt size:62, vlanId=0x463
+10:53:49'698.01>  >>>>  - ETM/DFT - getPacketInfo - Ipv6 prot payload - type:58(ICMPv6), ip hdr Length:40, length:8
+10:53:49'698.10>  >>>>  - ETM/ICMP6 - use client cpu=APP vlan=0x463 mac@=00:16:08:00:04:63
+10:53:49'698.10>  >>>>  - ETM/ICMP6 - src IP@=
+10:53:49'698.13>  >>>>  - ETM/ICMP6 - dst IP@=FF02::2
+10:53:49'698.19>  >>>>  - ETM/ICMP6 - cpu=APP UL pkt ROUTER SOLICIT (date=216090)
+10:53:49'698.32>  >>>>  - ETM/ICMP6 - (L=62)
+00 16 08 00 04 63 00 16  08 00 04 63 86 DD 60 00
+00 00 00 08 3A FF 00 00  00 00 00 00 00 00 00 00
+00 00 00 00 00 00 FF 02  00 00 00 00 00 00 00 00
+00 00 00 00 00 02 85 00  7B B8 00 00 00 00
+<END>
+10:53:49'698.35>  >>>>  - ETM/ICMP6 - Router Solicitation
+10:53:49'698.35>  >>>>  - ETM/ICMP6 - Forwarded msg content =======================
+10:53:49'698.50>  >>>>  - ETM/ICMP6 - (L=62)
+00 16 08 00 04 63 00 16  08 00 04 63 86 DD 60 00
+00 00 00 08 3A FF 00 00  00 00 00 00 00 00 00 00
+00 00 00 00 00 00 FF 02  00 00 00 00 00 00 00 00
+00 00 00 00 00 02 85 00  7B B8 00 00 00 00
+<END>
+10:53:49'698.53> CID 3 UL IP packet (length=48)
+		 60 00 00 00 00 08 3a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ff 02 00 00 00 00 00 00 00 00 00 00 00 00 00 02 85 00 7b b8 00 00 00 00
+10:53:49'810.92>  >>>>  - ETM/SPY - catchSpecificDlPacket - IpV6 - payload type=58 hdrL=40 payloadL=48
+10:53:49'810.98>  >>>>  - ETM/DFT - getPacketInfo - Ipv6 prot payload - type:58(ICMPv6), ip hdr Length:40, length:48
+10:53:49'810.98>  >>>>  - ETM/SPY - catchSpecificDlPacket - IP6 ICMP, pkt size:102, epsBrId=5
+10:53:49'811.08>  >>>>  - ETM/ICMP6 - use client cpu=APP vlan=0x463 mac@=00:16:08:00:04:63
+10:53:49'811.14>  >>>>  - ETM/ICMP6 - src IP@=FE80::7B84:B367:6859:2828
+10:53:49'811.17>  >>>>  - ETM/ICMP6 - dst IP@=
+10:53:49'811.23>  >>>>  - ETM/ICMP6 - ICMPv6 type (134) ROUTER ADVERT (date=216200)
+10:53:49'811.44>  >>>>  - ETM/ICMP6 - (L=102)
+00 16 08 00 04 63 00 16  08 FF 02 01 86 DD 60 00
+00 00 00 30 3A FF FE 80  00 00 00 00 00 00 7B 84
+B3 67 68 59 28 28 00 00  00 00 00 00 00 00 00 00
+00 00 00 00 00 00 86 00  84 4E 40 00 FF FF 00 00
+00 00 00 00 00 00 03 04  40 C0 FF FF FF FF FF FF
+FF FF 00 00 00 00 2A 02  05 78 54 17 30 02 00 00
+00 00 00 00 00 00
+<END>
+10:53:49'811.47>  >>>>  - ETM/ICMP6 - parseMsgOptions - src@:0x5307D4, length:32
+10:53:49'811.50>  >>>>  - ETM/ICMP6 - parseMsgOptions - type:PREFIX INFO, length:32
+10:53:49'811.56>  >>>>  - ETM/ICMP6 - parseOptions - PRFX_INFO: flags(c0) validLifeTime(-1) addr(2A02:578:5417:3002:) length(64)
+10:53:49'811.84>  >>>>  - ETM/ICMP6 - Forwarded msg content (cpu=APP) =============
+10:53:49'812.08>  >>>>  - ETM/ICMP6 - (L=110)
+00 16 08 00 04 63 00 16  08 FF 02 01 86 DD 60 00
+00 00 00 38 3A FF FE 80  00 00 00 00 00 00 7B 84
+B3 67 68 59 28 28 00 00  00 00 00 00 00 00 00 00
+00 00 00 00 00 00 86 00  79 71 40 40 FF FF 00 00
+00 00 00 00 00 00 03 04  40 C0 FF FF FF FF FF FF
+FF FF 00 00 00 00 2A 02  05 78 54 17 30 02 00 00
+00 00 00 00 00 00 05 01  00 00 00 00 05 94
+<END>
+10:53:49'812.14>  >>>>  - ETM/SPY - Drop the DL icmpV6 msg
+10:53:50'015.42>  >>>>  - ETM/MSG - etmTaskHandler id=0x2A000003 EtmUlDataInd
+10:53:50'015.48>  >>>>  - ETM/SPY - catchSpecificUlPacket - IP6, pkt size:86, vlanId=0x463
+10:53:50'015.57>  >>>>  - ETM/DFT - getPacketInfo - Ipv6 prot payload - type:58(ICMPv6), ip hdr Length:48, length:24
+10:53:50'015.66>  >>>>  - ETM/ICMP6 - use client cpu=APP vlan=0x463 mac@=00:16:08:00:04:63
+10:53:50'015.69>  >>>>  - ETM/ICMP6 - src IP@=
+10:53:50'015.72>  >>>>  - ETM/ICMP6 - dst IP@=FF02::1:FF00:463
+10:53:50'015.78>  >>>>  - ETM/ICMP6 - cpu=APP UL pkt MLD1 REPORT (date=216410)
+10:53:50'016.00>  >>>>  - ETM/ICMP6 - (L=86)
+00 16 08 00 04 63 00 16  08 00 04 63 86 DD 60 00
+00 00 00 20 00 01 00 00  00 00 00 00 00 00 00 00
+00 00 00 00 00 00 FF 02  00 00 00 00 00 00 00 00
+00 01 FF 00 04 63 3A 00  05 02 00 00 01 00 83 00
+77 DD 00 00 00 00 FF 02  00 00 00 00 00 00 00 00
+00 01 FF 00 04 63
+<END>
+10:53:50'016.06>  >>>>  - ETM/ICMP6 - Forwarded msg content =======================
+10:53:50'016.24>  >>>>  - ETM/ICMP6 - (L=86)
+00 16 08 00 04 63 00 16  08 00 04 63 86 DD 60 00
+00 00 00 20 00 01 00 00  00 00 00 00 00 00 00 00
+00 00 00 00 00 00 FF 02  00 00 00 00 00 00 00 00
+00 01 FF 17 30 02 3A 00  05 02 00 00 01 00 83 00
+4C 27 00 00 00 00 FF 02  00 00 00 00 00 00 00 00
+00 01 FF 00 04 63
+<END>
+10:53:50'016.27> CID 3 UL IP packet (length=72)
+		 60 00 00 00 00 20 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ff 02 00 00 00 00 00 00 00 00 00 01 ff 17 30 02 3a 00 05 02 00 00 01 00 83 00 4c 27 00 00 00 00 ff 02 00 00 00 00 00 00 00 00 00 01 ff 00 04 63
+10:53:50'515.41>  >>>>  - ETM/MSG - etmTaskHandler id=0x2A000013 EtmTInactivityExpiry
+10:53:50'695.55>  >>>>  - ETM/MSG - etmTaskHandler id=0x2A000003 EtmUlDataInd
+10:53:50'695.61>  >>>>  - ETM/SPY - catchSpecificUlPacket - IP6, pkt size:70, vlanId=0x463
+10:53:50'695.70>  >>>>  - ETM/DFT - getPacketInfo - Ipv6 prot payload - type:58(ICMPv6), ip hdr Length:40, length:16
+10:53:50'695.79>  >>>>  - ETM/ICMP6 - use client cpu=APP vlan=0x463 mac@=00:16:08:00:04:63
+10:53:50'695.82>  >>>>  - ETM/ICMP6 - src IP@=FE80::16:800:463
+10:53:50'695.86>  >>>>  - ETM/ICMP6 - dst IP@=FF02::2
+10:53:50'695.86>  >>>>  - ETM/ICMP6 - set the Private Local Adr to the rcv SRC IP@
+10:53:50'695.95>  >>>>  - ETM/ICMP6 - cpu=APP UL pkt ROUTER SOLICIT (date=217090)
+10:53:50'696.10>  >>>>  - ETM/ICMP6 - (L=70)
+00 16 08 00 04 63 00 16  08 00 04 63 86 DD 60 00
+00 00 00 10 3A FF FE 80  00 00 00 00 00 00 00 00
+00 16 08 00 04 63 FF 02  00 00 00 00 00 00 00 00
+00 00 00 00 00 02 85 00  63 3C 00 00 00 00 01 01
+00 16 08 00 04 63
+<END>
+10:53:50'696.13>  >>>>  - ETM/ICMP6 - Router Solicitation
+10:53:50'696.19>  >>>>  - ETM/ICMP6 - Forwarded msg content =======================
+10:53:50'696.34>  >>>>  - ETM/ICMP6 - (L=70)
+00 16 08 00 04 63 00 16  08 00 04 63 86 DD 60 00
+00 00 00 10 3A FF FE 80  00 00 00 00 00 00 2A 02
+05 78 54 17 30 02 FF 02  00 00 00 00 00 00 00 00
+00 00 00 00 00 02 85 00  BC 21 00 00 00 00 01 01
+00 16 08 00 04 63
+<END>
+10:53:50'696.37> CID 3 UL IP packet (length=56)
+		 60 00 00 00 00 10 3a ff fe 80 00 00 00 00 00 00 2a 02 05 78 54 17 30 02 ff 02 00 00 00 00 00 00 00 00 00 00 00 00 00 02 85 00 bc 21 00 00 00 00 01 01 00 16 08 00 04 63
+10:53:50'801.05>  >>>>  - ETM/SPY - catchSpecificDlPacket - IpV6 - payload type=58 hdrL=40 payloadL=48
+10:53:50'801.08>  >>>>  - ETM/DFT - getPacketInfo - Ipv6 prot payload - type:58(ICMPv6), ip hdr Length:40, length:48
+10:53:50'801.11>  >>>>  - ETM/SPY - catchSpecificDlPacket - IP6 ICMP, pkt size:102, epsBrId=5
+10:53:50'801.17>  >>>>  - ETM/ICMP6 - use client cpu=APP vlan=0x463 mac@=00:16:08:00:04:63
+10:53:50'801.26>  >>>>  - ETM/ICMP6 - src IP@=FE80::7B84:B367:6859:2828
+10:53:50'801.29>  >>>>  - ETM/ICMP6 - dst IP@=FE80::2A02:578:5417:3002
+10:53:50'801.35>  >>>>  - ETM/ICMP6 - ICMPv6 type (134) ROUTER ADVERT (date=217190)
+10:53:50'802.21>  >>>>  - ETM/SPY - Drop the DL icmpV6 msg
+10:53:50'801.57>  >>>>  - ETM/ICMP6 - (L=102)
+00 16 08 00 04 63 00 16  08 FF 02 01 86 DD 60 00
+00 00 00 30 3A FF FE 80  00 00 00 00 00 00 7B 84
+B3 67 68 59 28 28 FE 80  00 00 00 00 00 00 2A 02
+05 78 54 17 30 02 86 00  D2 39 40 00 FF FF 00 00
+00 00 00 00 00 00 03 04  40 C0 FF FF FF FF FF FF
+FF FF 00 00 00 00 2A 02  05 78 54 17 30 02 00 00
+00 00 00 00 00 00
+<END>
+10:53:50'801.60>  >>>>  - ETM/ICMP6 - parseMsgOptions - src@:0x5307D4, length:32
+10:53:50'801.63>  >>>>  - ETM/ICMP6 - parseMsgOptions - type:PREFIX INFO, length:32
+10:53:50'801.66>  >>>>  - ETM/ICMP6 - parseOptions - PRFX_INFO: flags(c0) validLifeTime(-1) addr(2A02:578:5417:3002:) length(64)
+10:53:50'801.90>  >>>>  - ETM/ICMP6 - Forwarded msg content (cpu=APP) =============
+10:53:50'802.12>  >>>>  - ETM/ICMP6 - (L=110)
+00 16 08 00 04 63 00 16  08 FF 02 01 86 DD 60 00
+00 00 00 38 3A FF FE 80  00 00 00 00 00 00 7B 84
+B3 67 68 59 28 28 FE 80  00 00 00 00 00 00 00 00
+00 16 08 00 04 63 86 00  6E 77 40 40 FF FF 00 00
+00 00 00 00 00 00 03 04  40 C0 FF FF FF FF FF FF
+FF FF 00 00 00 00 2A 02  05 78 54 17 30 02 00 00
+00 00 00 00 00 00 05 01  00 00 00 00 05 94
+<END>
+10:53:51'195.48>  >>>>  - ETM/MSG - etmTaskHandler id=0x2A000013 EtmTInactivityExpiry
+10:53:51'695.68>  >>>>  - ETM/MSG - etmTaskHandler id=0x2A000003 EtmUlDataInd
+10:53:51'695.71>  >>>>  - ETM/SPY - catchSpecificUlPacket - IP6, pkt size:86, vlanId=0x463
+10:53:51'695.81>  >>>>  - ETM/DFT - getPacketInfo - Ipv6 prot payload - type:58(ICMPv6), ip hdr Length:40, length:32
+10:53:51'695.93>  >>>>  - ETM/ICMP6 - use client cpu=APP vlan=0x463 mac@=00:16:08:00:04:63
+10:53:51'695.96>  >>>>  - ETM/ICMP6 - src IP@=FE80::16:800:463
+10:53:51'695.99>  >>>>  - ETM/ICMP6 - dst IP@=FF02::1:FF59:2828
+10:53:51'695.99>  >>>>  - ETM/ICMP6 - set the Private Local Adr to the rcv SRC IP@
+10:53:51'696.05>  >>>>  - ETM/ICMP6 - cpu=APP UL pkt NEIGH SOLICIT (date=218090)
+10:53:51'696.26>  >>>>  - ETM/ICMP6 - (L=86)
+00 16 08 00 04 63 00 16  08 00 04 63 86 DD 60 00
+00 00 00 20 3A FF FE 80  00 00 00 00 00 00 00 00
+00 16 08 00 04 63 FF 02  00 00 00 00 00 00 00 00
+00 01 FF 59 28 28 87 00  7B BC 00 00 00 00 FE 80
+00 00 00 00 00 00 7B 84  B3 67 68 59 28 28 01 01
+00 16 08 00 04 63
+<END>
+10:53:51'696.29>  >>>>  - ETM/ICMP6 - target:FE80::7B84:B367:6859:2828
+10:53:51'696.32>  >>>>  - ETM/ICMP6 - Address Resolution / Unreach Detection
+10:53:51'696.42>  >>>>  - ETM/ICMP6 - Proxy reply content =========================
+10:53:51'696.60>  >>>>  - ETM/ICMP6 - (L=86)
+00 16 08 00 04 63 00 16  08 FF 02 01 86 DD 60 00
+00 00 00 20 3A FF FE 80  00 00 00 00 00 00 7B 84
+B3 67 68 59 28 28 FE 80  00 00 00 00 00 00 00 00
+00 16 08 00 04 63 88 00  03 B6 E0 00 00 00 FE 80
+00 00 00 00 00 00 7B 84  B3 67 68 59 28 28 02 01
+00 16 08 FF 02 01
+<END>
+10:53:51'696.66>  >>>>  - ETM/SPY - Drop the UL icmpV6 msg
+10:53:51'696.97>  >>>>  - ETM/MSG - etmTaskHandler id=0x2A000003 EtmUlDataInd
+10:53:51'697.00>  >>>>  - ETM/SPY - catchSpecificUlPacket - IP6, pkt size:86, vlanId=0x463
+10:53:51'697.06>  >>>>  - ETM/DFT - getPacketInfo - Ipv6 prot payload - type:58(ICMPv6), ip hdr Length:40, length:32
+10:53:51'697.15>  >>>>  - ETM/ICMP6 - use client cpu=APP vlan=0x463 mac@=00:16:08:00:04:63
+10:53:51'697.18>  >>>>  - ETM/ICMP6 - src IP@=FE80::16:800:463
+10:53:51'697.21>  >>>>  - ETM/ICMP6 - dst IP@=FF02::1:FF00:463
+10:53:51'697.21>  >>>>  - ETM/ICMP6 - set the Private Local Adr to the rcv SRC IP@
+10:53:51'697.27>  >>>>  - ETM/ICMP6 - cpu=APP UL pkt NEIGH SOLICIT (date=218090)
+10:53:51'697.45>  >>>>  - ETM/ICMP6 - (L=86)
+00 16 08 00 04 63 00 16  08 00 04 63 86 DD 60 00
+00 00 00 20 3A FF FE 80  00 00 00 00 00 00 00 00
+00 16 08 00 04 63 FF 02  00 00 00 00 00 00 00 00
+00 01 FF 00 04 63 87 00  9D BC 00 00 00 00 2A 02
+05 78 54 17 30 02 00 00  00 16 08 00 04 63 01 01
+00 16 08 00 04 63
+<END>
+10:53:51'697.48>  >>>>  - ETM/ICMP6 - target:2A02:578:5417:3002::16:800:463
+10:53:51'697.51>  >>>>  - ETM/ICMP6 - Address Resolution / Unreach Detection
+10:53:51'697.61>  >>>>  - ETM/ICMP6 - Proxy reply content =========================
+10:53:51'697.79>  >>>>  - ETM/ICMP6 - (L=86)
+00 16 08 00 04 63 00 16  08 FF 02 01 86 DD 60 00
+00 00 00 20 3A FF 2A 02  05 78 54 17 30 02 00 00
+00 16 08 00 04 63 FE 80  00 00 00 00 00 00 00 00
+00 16 08 00 04 63 88 00  FF 79 E0 00 00 00 2A 02
+05 78 54 17 30 02 00 00  00 16 08 00 04 63 02 01
+00 16 08 FF 02 01
+<END>
+10:53:51'697.82>  >>>>  - ETM/SPY - Drop the UL icmpV6 msg
+10:54:00'803.91>  #!!# WARN :  - FSM/SPY - [SMS MO FSM] Unhandled evt=RRC_REL_IND state=IDLE
+10:54:00'804.09>  >>>>  - ETM/MSG - etmTaskHandler id=0x2A000010 EtmRrcStateInd
+10:54:00'804.09>  #!!# WARN :  - ETM/SPY - Stop Traffic Detection
+10:54:00'858.08>  >>>>  - ETM/MSG - etmTaskHandler id=0x2900001A UpdcpRbReleaseInd
+10:54:00'858.11>  >>>>  - ETM/RB_DB - Notify radio bearer release epsRbId=6
+10:54:00'858.14>  >>>>  - ETM/MSG - etmTaskHandler id=0x2900001A UpdcpRbReleaseInd
+10:54:00'858.14>  >>>>  - ETM/RB_DB - Notify radio bearer release epsRbId=5
+10:54:06'829.49>  #!!# WARN :  - MAC/RA - PRACH problem indication
+10:54:08'129.82>  >>>>  - ETM/MSG - etmTaskHandler id=0x2A000010 EtmRrcStateInd
+10:54:08'129.85>  #!!# WARN :  - ETM/SPY - Start Traffic Detection
+10:54:08'161.31>  >>>>  - ETM/MSG - etmTaskHandler id=0x29000019 UpdcpRbSetupInd
+10:54:08'161.31>  >>>>  - ETM/RB_DB - Notify radio bearer setup epsRbId=6 pdcpDrbId=3
+10:54:08'161.34>  >>>>  - ETM/MSG - etmTaskHandler id=0x29000019 UpdcpRbSetupInd
+10:54:08'161.34>  >>>>  - ETM/RB_DB - Notify radio bearer setup epsRbId=5 pdcpDrbId=4
+10:54:08'236.97>  >>>>  - ETM/SPY - catchSpecificDlPacket - IpV6 - payload type=58 hdrL=40 payloadL=48
+10:54:08'237.03>  >>>>  - ETM/DFT - getPacketInfo - Ipv6 prot payload - type:58(ICMPv6), ip hdr Length:40, length:48
+10:54:08'237.03>  >>>>  - ETM/SPY - catchSpecificDlPacket - IP6 ICMP, pkt size:102, epsBrId=5
+10:54:08'237.12>  >>>>  - ETM/ICMP6 - use client cpu=APP vlan=0x463 mac@=00:16:08:00:04:63
+10:54:08'237.18>  >>>>  - ETM/ICMP6 - src IP@=FE80::7B84:B367:6859:2828
+10:54:08'237.21>  >>>>  - ETM/ICMP6 - dst IP@=FF02::1
+10:54:08'237.27>  >>>>  - ETM/ICMP6 - ICMPv6 type (134) ROUTER ADVERT (date=234620)
+10:54:08'237.55>  >>>>  - ETM/ICMP6 - (L=102)
+00 16 08 00 04 63 00 16  08 FF 02 01 86 DD 60 00
+00 00 00 30 3A FF FE 80  00 00 00 00 00 00 7B 84
+B3 67 68 59 28 28 FF 02  00 00 00 00 00 00 00 00
+00 00 00 00 00 01 86 00  85 4A 40 00 FF FF 00 00
+00 00 00 00 00 00 03 04  40 C0 FF FF FF FF FF FF
+FF FF 00 00 00 00 2A 02  05 78 54 17 30 02 00 00
+00 00 00 00 00 00
+<END>
+10:54:08'237.58>  >>>>  - ETM/ICMP6 - parseMsgOptions - src@:0x5307D4, length:32
+10:54:08'237.61>  >>>>  - ETM/ICMP6 - parseMsgOptions - type:PREFIX INFO, length:32
+10:54:08'237.64>  >>>>  - ETM/ICMP6 - parseOptions - PRFX_INFO: flags(c0) validLifeTime(-1) addr(2A02:578:5417:3002:) length(64)
+10:54:08'237.88>  >>>>  - ETM/ICMP6 - Forwarded msg content (cpu=APP) =============
+10:54:08'238.13>  >>>>  - ETM/ICMP6 - (L=110)
+00 16 08 00 04 63 00 16  08 FF 02 01 86 DD 60 00
+00 00 00 38 3A FF FE 80  00 00 00 00 00 00 7B 84
+B3 67 68 59 28 28 FF 02  00 00 00 00 00 00 00 00
+00 00 00 00 00 01 86 00  7A 6D 40 40 FF FF 00 00
+00 00 00 00 00 00 03 04  40 C0 FF FF FF FF FF FF
+FF FF 00 00 00 00 2A 02  05 78 54 17 30 02 00 00
+00 00 00 00 00 00 05 01  00 00 00 00 05 94
+<END>
+10:54:08'238.19>  >>>>  - ETM/SPY - Drop the DL icmpV6 msg
+10:54:08'627.55>  >>>>  - ETM/MSG - etmTaskHandler id=0x2A000013 EtmTInactivityExpiry
+10:54:18'240.04>  #!!# WARN :  - FSM/SPY - [SMS MO FSM] Unhandled evt=RRC_REL_IND state=IDLE
+10:54:18'240.19>  >>>>  - ETM/MSG - etmTaskHandler id=0x2A000010 EtmRrcStateInd
+10:54:18'240.22>  #!!# WARN :  - ETM/SPY - Stop Traffic Detection
+10:54:18'300.19>  >>>>  - ETM/MSG - etmTaskHandler id=0x2900001A UpdcpRbReleaseInd
+10:54:18'300.22>  >>>>  - ETM/RB_DB - Notify radio bearer release epsRbId=6
+10:54:18'300.22>  >>>>  - ETM/MSG - etmTaskHandler id=0x2900001A UpdcpRbReleaseInd
+10:54:18'300.50>  >>>>  - ETM/RB_DB - Notify radio bearer release epsRbId=5
+10:54:23'471.42>  #!!# WARN :  - MAC/RA - PRACH problem indication
+10:54:24'527.76>  >>>>  - ETM/MSG - etmTaskHandler id=0x2A000010 EtmRrcStateInd
+10:54:24'527.80>  #!!# WARN :  - ETM/SPY - Start Traffic Detection
+10:54:24'569.12>  >>>>  - ETM/MSG - etmTaskHandler id=0x29000019 UpdcpRbSetupInd
+10:54:24'569.15>  >>>>  - ETM/RB_DB - Notify radio bearer setup epsRbId=6 pdcpDrbId=3
+10:54:24'569.18>  >>>>  - ETM/MSG - etmTaskHandler id=0x29000019 UpdcpRbSetupInd
+10:54:24'569.18>  >>>>  - ETM/RB_DB - Notify radio bearer setup epsRbId=5 pdcpDrbId=4
+10:54:24'605.00>  >>>>  - ETM/SPY - catchSpecificDlPacket - IpV6 - payload type=58 hdrL=40 payloadL=48
+10:54:24'605.06>  >>>>  - ETM/DFT - getPacketInfo - Ipv6 prot payload - type:58(ICMPv6), ip hdr Length:40, length:48
+10:54:24'605.06>  >>>>  - ETM/SPY - catchSpecificDlPacket - IP6 ICMP, pkt size:102, epsBrId=5
+10:54:24'605.16>  >>>>  - ETM/ICMP6 - use client cpu=APP vlan=0x463 mac@=00:16:08:00:04:63
+10:54:24'605.22>  >>>>  - ETM/ICMP6 - src IP@=FE80::7B84:B367:6859:2828
+10:54:24'605.25>  >>>>  - ETM/ICMP6 - dst IP@=FF02::1
+10:54:24'605.31>  >>>>  - ETM/ICMP6 - ICMPv6 type (134) ROUTER ADVERT (date=250990)
+10:54:24'605.55>  >>>>  - ETM/ICMP6 - (L=102)
+00 16 08 00 04 63 00 16  08 FF 02 01 86 DD 60 00
+00 00 00 30 3A FF FE 80  00 00 00 00 00 00 7B 84
+B3 67 68 59 28 28 FF 02  00 00 00 00 00 00 00 00
+00 00 00 00 00 01 86 00  85 4A 40 00 FF FF 00 00
+00 00 00 00 00 00 03 04  40 C0 FF FF FF FF FF FF
+FF FF 00 00 00 00 2A 02  05 78 54 17 30 02 00 00
+00 00 00 00 00 00
+<END>
+10:54:24'605.58>  >>>>  - ETM/ICMP6 - parseMsgOptions - src@:0x5307D4, length:32
+10:54:24'605.58>  >>>>  - ETM/ICMP6 - parseMsgOptions - type:PREFIX INFO, length:32
+10:54:24'605.64>  >>>>  - ETM/ICMP6 - parseOptions - PRFX_INFO: flags(c0) validLifeTime(-1) addr(2A02:578:5417:3002:) length(64)
+10:54:24'605.86>  >>>>  - ETM/ICMP6 - Forwarded msg content (cpu=APP) =============
+10:54:24'606.10>  >>>>  - ETM/ICMP6 - (L=110)
+00 16 08 00 04 63 00 16  08 FF 02 01 86 DD 60 00
+00 00 00 38 3A FF FE 80  00 00 00 00 00 00 7B 84
+B3 67 68 59 28 28 FF 02  00 00 00 00 00 00 00 00
+00 00 00 00 00 01 86 00  7A 6D 40 40 FF FF 00 00
+00 00 00 00 00 00 03 04  40 C0 FF FF FF FF FF FF
+FF FF 00 00 00 00 2A 02  05 78 54 17 30 02 00 00
+00 00 00 00 00 00 05 01  00 00 00 00 05 94
+<END>
+10:54:24'606.16>  >>>>  - ETM/SPY - Drop the DL icmpV6 msg
+10:54:25'019.55>  >>>>  - ETM/MSG - etmTaskHandler id=0x2A000013 EtmTInactivityExpiry
+10:54:34'597.89>  #!!# WARN :  - FSM/SPY - [SMS MO FSM] Unhandled evt=RRC_REL_IND state=IDLE
+10:54:34'598.07>  >>>>  - ETM/MSG - etmTaskHandler id=0x2A000010 EtmRrcStateInd
+10:54:34'598.07>  #!!# WARN :  - ETM/SPY - Stop Traffic Detection
+10:54:34'652.15>  >>>>  - ETM/MSG - etmTaskHandler id=0x2900001A UpdcpRbReleaseInd
+10:54:34'652.18>  >>>>  - ETM/RB_DB - Notify radio bearer release epsRbId=6
+10:54:34'652.18>  >>>>  - ETM/MSG - etmTaskHandler id=0x2900001A UpdcpRbReleaseInd
+10:54:34'652.21>  >>>>  - ETM/RB_DB - Notify radio bearer release epsRbId=5
+

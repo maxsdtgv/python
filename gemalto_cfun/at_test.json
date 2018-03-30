@@ -1,0 +1,23 @@
+{
+  "serial": {
+    "port": "/dev/ttyUSB0",
+    "baud": "115200",
+    "rtscts": false,
+    "bytesize": 8,
+    "parity": "N",
+    "stopbits": 1,
+    "timeout": 10
+  },
+"cli_serial": {
+    "port": "/dev/ttyUSB0",
+    "baud": "115200",
+    "rtscts": false,
+    "bytesize": 8,
+    "parity": "N",
+    "stopbits": 1,
+    "timeout": 10
+  },
+
+  "default_icf": "3",
+  "verbose": true
+}

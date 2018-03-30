@@ -1,0 +1,85 @@
+4:55:22'721.65>  >>>>  - ETM/DFT - getPacketInfo - Ipv6 prot payload - type:58(ICMPv6), ip hdr Length:40, length:48
+14:55:22'721.68>  >>>>  - ETM/SPY - catchSpecificDlPacket - IP6 ICMP, pkt size:102, epsBrId=6
+14:55:22'721.68>  #!!# WARN :  - ETM/ICMP6 - drop DL: client not configured yet
+14:55:22'721.71>  >>>>  - ETM/SPY - Drop the DL icmpV6 msg
+14:55:23'004.69>  >>>>  - ETM/MSG - etmTaskHandler id=0x2A000003 EtmUlDataInd
+14:55:23'004.75>  >>>>  - ETM/SPY - catchSpecificUlPacket - IP6, pkt size:86, vlanId=0x462
+14:55:23'004.85>  >>>>  - ETM/DFT - getPacketInfo - Ipv6 prot payload - type:58(ICMPv6), ip hdr Length:48, length:24
+14:55:23'004.94>  >>>>  - ETM/DFT - updtClientInfo - cpu=APP client mac@ => 00:16:08:00:04:62
+14:55:23'004.97>  >>>>  - ETM/ICMP6 - use client cpu=APP vlan=0x462 mac@=00:16:08:00:04:62
+14:55:23'005.00>  >>>>  - ETM/ICMP6 - src IP@=
+14:55:23'005.03>  >>>>  - ETM/ICMP6 - dst IP@=FF02::1:FF00:462
+14:55:23'005.09>  >>>>  - ETM/ICMP6 - cpu=APP UL pkt MLD1 REPORT (date=65110)
+14:55:23'005.30>  >>>>  - ETM/ICMP6 - (L=86)
+00 16 08 00 04 62 00 16  08 00 04 62 86 DD 60 00
+00 00 00 20 00 01 00 00  00 00 00 00 00 00 00 00
+00 00 00 00 00 00 FF 02  00 00 00 00 00 00 00 00
+00 01 FF 00 04 62 3A 00  05 02 00 00 01 00 83 00
+77 DF 00 00 00 00 FF 02  00 00 00 00 00 00 00 00
+00 01 FF 00 04 62
+<END>
+14:55:23'005.36>  >>>>  - ETM/ICMP6 - Forwarded msg content =======================
+14:55:23'005.55>  >>>>  - ETM/ICMP6 - (L=86)
+00 16 08 00 04 62 00 16  08 00 04 62 86 DD 60 00
+00 00 00 20 00 01 FE 80  00 00 00 00 00 00 2A 02
+05 78 54 17 20 02 FF 02  00 00 00 00 00 00 00 00
+00 01 FF 00 04 62 3A 00  05 02 00 00 01 00 83 00
+D5 CA 00 00 00 00 FF 02  00 00 00 00 00 00 00 00
+00 01 FF 00 04 62
+<END>
+14:55:23'006.34>  >>>>  - ETM/MSG - etmTaskHandler id=0x2A000003 EtmUlDataInd
+14:55:23'006.40>  >>>>  - ETM/SPY - catchSpecificUlPacket - IP6, pkt size:86, vlanId=0x462
+14:55:23'006.46>  >>>>  - ETM/DFT - getPacketInfo - Ipv6 prot payload - type:58(ICMPv6), ip hdr Length:40, length:32
+14:55:23'006.55>  >>>>  - ETM/ICMP6 - use client cpu=APP vlan=0x462 mac@=00:16:08:00:04:62
+14:55:23'006.55>  >>>>  - ETM/ICMP6 - src IP@=
+14:55:23'006.62>  >>>>  - ETM/ICMP6 - dst IP@=FF02::1:FF00:462
+14:55:23'006.65>  >>>>  - ETM/ICMP6 - cpu=APP UL pkt NEIGH SOLICIT (date=65110)
+14:55:23'006.86>  >>>>  - ETM/ICMP6 - (L=86)
+00 16 08 00 04 62 00 16  08 00 04 62 86 DD 60 00
+00 00 00 20 3A FF 00 00  00 00 00 00 00 00 00 00
+00 00 00 00 00 00 FF 02  00 00 00 00 00 00 00 00
+00 01 FF 00 04 62 87 00  5D CC 00 00 00 00 FE 80
+00 00 00 00 00 00 00 00  00 16 08 00 04 62 01 01
+00 16 08 00 04 62
+<END>
+14:55:23'006.92>  >>>>  - ETM/ICMP6 - target:FE80::16:800:462
+14:55:23'006.92>  >>>>  - ETM/ICMP6 - Duplicate Addr Detection
+14:55:23'006.92>  >>>>  - ETM/SPY - Drop the UL icmpV6 msg
+14:55:23'007.20>  >>>>  - ETM/MSG - etmTaskHandler id=0x2A000003 EtmUlDataInd
+14:55:23'007.26>  >>>>  - ETM/SPY - catchSpecificUlPacket - IP6, pkt size:62, vlanId=0x462
+14:55:23'007.29>  >>>>  - ETM/DFT - getPacketInfo - Ipv6 prot payload - type:58(ICMPv6), ip hdr Length:40, length:8
+14:55:23'007.38>  >>>>  - ETM/ICMP6 - use client cpu=APP vlan=0x462 mac@=00:16:08:00:04:62
+14:55:23'007.41>  >>>>  - ETM/ICMP6 - src IP@=
+14:55:23'007.44>  >>>>  - ETM/ICMP6 - dst IP@=FF02::2
+14:55:23'007.50>  >>>>  - ETM/ICMP6 - cpu=APP UL pkt ROUTER SOLICIT (date=65110)
+14:55:23'007.62>  >>>>  - ETM/ICMP6 - (L=62)
+00 16 08 00 04 62 00 16  08 00 04 62 86 DD 60 00
+00 00 00 08 3A FF 00 00  00 00 00 00 00 00 00 00
+00 00 00 00 00 00 FF 02  00 00 00 00 00 00 00 00
+00 00 00 00 00 02 85 00  7B B8 00 00 00 00
+<END>
+14:55:23'007.65>  >>>>  - ETM/ICMP6 - Router Solicitation
+14:55:23'007.65>  >>>>  - ETM/ICMP6 - Forwarded msg content =======================
+14:55:23'007.81>  >>>>  - ETM/ICMP6 - (L=62)
+00 16 08 00 04 62 00 16  08 00 04 62 86 DD 60 00
+00 00 00 08 3A FF 00 00  00 00 00 00 00 00 00 00
+00 00 00 00 00 00 FF 02  00 00 00 00 00 00 00 00
+00 00 00 00 00 02 85 00  7B B8 00 00 00 00
+<END>
+14:55:23'091.67>  >>>>  - ETM/SPY - catchSpecificDlPacket - IpV6 - payload type=58 hdrL=40 payloadL=48
+14:55:23'091.73>  >>>>  - ETM/DFT - getPacketInfo - Ipv6 prot payload - type:58(ICMPv6), ip hdr Length:40, length:48
+14:55:23'091.73>  >>>>  - ETM/SPY - catchSpecificDlPacket - IP6 ICMP, pkt size:102, epsBrId=6
+14:55:23'091.82>  >>>>  - ETM/ICMP6 - use client cpu=APP vlan=0x462 mac@=00:16:08:00:04:62
+14:55:23'091.88>  >>>>  - ETM/ICMP6 - src IP@=FE80::52AA:2ED6:CE6E:24CC
+14:55:23'091.91>  >>>>  - ETM/ICMP6 - dst IP@=
+14:55:23'091.97>  >>>>  - ETM/ICMP6 - ICMPv6 type (134) ROUTER ADVERT (date=65190)
+14:55:23'092.18>  >>>>  - ETM/ICMP6 - (L=102)
+00 16 08 00 04 62 00 16  08 FF 02 01 86 DD 60 00
+00 00 00 30 3A FF FE 80  00 00 00 00 00 00 52 AA
+2E D6 CE 6E 24 CC 00 00  00 00 00 00 00 00 00 00
+00 00 00 00 00 00 86 00  DF 00 40 00 FF FF 00 00
+00 00 00 00 00 00 03 04  40 C0 FF FF FF FF FF FF
+FF FF 00 00 00 00 2A 02  05 78 54 17 20 02 00 00
+00 00 00 00 00 00
+<END>
+
